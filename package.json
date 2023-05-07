@@ -2,16 +2,16 @@
   "name": "typescript_crud",
   "version": "1.0.0",
   "main": "index.js",
-  "devDependencies": {},
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start:server": "json-server --watch db.json --port 5000"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/kim1536/typeScript_crud.git"
   },
   "dependencies": {
-    "typescript": "^5.0.4"
+    "json-server": "^0.17.3",
+    "save": "^2.9.0"
   },
   "keywords": [],
   "author": "",
@@ -20,5 +20,8 @@
     "url": "https://github.com/kim1536/typeScript_crud/issues"
   },
   "homepage": "https://github.com/kim1536/typeScript_crud#readme",
-  "description": ""
+  "description": "",
+  "devDependencies": {
+    "typescript": "^5.0.4"
+  }
 }
