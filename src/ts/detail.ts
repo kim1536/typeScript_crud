@@ -6,7 +6,7 @@ let serectId = new URL(location.href).searchParams.get("seq");
 
 const url = "http://localhost:5000/users"
 
-function getUsers(url: string): Promise<User>{
+function getUsers(url: string) {
     return new Promise<User>((resolve, reject) => {
       httpServer.get<User>(url)
         .then((data:User) => {

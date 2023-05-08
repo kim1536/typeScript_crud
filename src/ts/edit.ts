@@ -13,7 +13,7 @@ const date = today.getDate();
 
 getUser(`${url}/${secretId}`);
 
-function getUser(url: string): Promise<User> {
+function getUser(url: string) {
   return httpServer.get<User>(url)
     .then((user) => {
       const userTable = document.querySelector<HTMLDivElement>('#userEditDiv');
